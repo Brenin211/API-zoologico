@@ -1,4 +1,9 @@
-class Ave extends Animal{
+import { Animal } from "./Animal";
+
+export class Ave extends Animal{
+    static push(novaAve: Ave) {
+        throw new Error("Method not implemented.");
+    }
     private envergadura: number;
 
     constructor(_envergadura: number, _nome: string, _idade: number, _genero: string) {
